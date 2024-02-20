@@ -1,0 +1,7 @@
+.sidebar {
+  padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
+  background-color: var(--navcolor);
+  color: var(--background);
+  max-width: 10rem;
+  height: 100vh;
+}/*# sourceMappingURL=sidebar.css.map */

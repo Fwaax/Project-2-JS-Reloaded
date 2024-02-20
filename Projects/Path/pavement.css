@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+    text-align: center;
+}
+
+.textContainer {
+    position: absolute;
+}
+
+.textContainer h1 {
+    color: #D3E10E;
+    font-size: 3rem;
+}
+
+.textContainer p {
+    color: #fff;
+}
+
+.imgContainer .img {}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    align-items: end;
+}
+
+.fillBar {
+    display: flex;
+    flex-direction: column;
+}
+
+.fillBar input {
+    height: 2rem;
+    width: 15rem;
+    background: #F6F6F6 0% 0% no-repeat padding-box;
+    border: none;
+}
+
+.fillBar label {
+    font-size: 0.75rem;
+    color: #011560;
+}
+
+.shadow {
+    background-color: #D3E10E;
+    width: 15rem;
+    height: 0.15rem;
+}
+
+.btn {
+    background-color: #D3E10E;
+    height: 2rem;
+    width: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3rem;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #011560;
+}
+
+.btn a:visited {
+    text-decoration: none;
+    color: #011560;
+}
+
+@media screen and (max-width:1200px) {
+    .img {
+        width: 100vw;
+        height: 50vh;
+    }
+}
+
+@media screen and (max-width:840px) {
+    .img {
+        width: 100vw;
+        height: 50vh;
+    }
+
+    .textContainer h1 {
+        font-size: 2rem;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn {
+        margin-left: 0.0001rem;
+        width: 15rem;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .img {
+        height: 60vh;
+    }
+
+    .btn {
+        margin-left: 0.0001rem;
+        width: 15rem;
+    }
+}

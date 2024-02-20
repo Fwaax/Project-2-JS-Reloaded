@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Says if that's even your real name</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" defer></script>
+</head>
+
+<body>
+
+    <div id="btnDiv" class="overlay">
+        <div class="minicntnr">
+            <h1 class="header">Simon Says</h1>
+            <button id="start" class="btn">Start Game</button>
+            <div id="scoreboard" class="scoreboard"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="gameDiv">
+            <div class="top">
+                <div id="colorDiv red" class="colorDiv red" onclick="check(0)"></div>
+                <div id="colorDiv green" class="colorDiv green" onclick="check(1)"></div>
+            </div>
+            <div class="bot">
+                <div id="colorDiv yellow" class="colorDiv yellow" onclick="check(2)"></div>
+                <div id="colorDiv blue" class="colorDiv blue" onclick="check(3)"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: var(--hamburger-gap);
+    width: max-content;
+    position: absolute;
+    top: var(--hamburger-margin);
+    left: var(--hamburger-margin);
+    z-index: 3;
+    cursor: pointer;
+    // Square root(2)=1.41421356237
+    --x-width: calc(var(--hamburger-height)*1.41421356237);
+
+    input {
+        appearance: none;
+        outline: none;
+        pointer-events: none;
+
+        &:checked {
+            opacity: 0;
+            width: 0;
+        }
+    }
+
+    &:has(input:checked)+.sidebar {
+        translate: 0;
+    }
+
+    &:has(input:checked)::before {
+        rotate: 45deg;
+        width: var(--x-width);
+        translate: 0 calc(var(--bar-height)/-2);
+    }
+
+    &:has(input:checked) {
+        --navcolor: #fff;
+        --background: #333;
+    }
+
+    &:has(input:checked)::after {
+        rotate: -45deg;
+        width: var(--x-width);
+        translate: 0 calc(var(--bar-height)/2);
+    }
+}

@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.editor {
+    height: 100vh;
+    width: 30vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 1rem;
+    /* display: none; */
+}
+
+.editee {
+    height: 100vh;
+    /* No need for Width */
+    /* width: 70vw; */
+}
+
+.inputDiv {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.btns {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 0.5rem;
+    width: 4rem;
+}
+
+.theThings {
+    height: 100vh;
+    width: 83.65vw;
+    background-color: #ffffff;
+    padding: 4.5rem;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    border-left: 4rem solid #a5a5a5;
+    border-right: 4rem solid #a5a5a5;
+    border-top: 4rem solid #a5a5a5;
+}
+
+.editedElement {
+    /* border: 1px solid black; */
+    display: block;
+    max-width: fit-content;
+    max-height: fit-content;
+    padding: 10px;
+}
+
+.btnExpander {
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.econt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid #000; */
+    /* background-color: aqua; */
+}
+
+.econt form {
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+@media screen and (max-width: 1440px) {
+    .econt {
+        position: absolute;
+        left: 1rem;
+        z-index: 100;
+        /* background-color: transparent; */
+    }
+}

@@ -1,0 +1,60 @@
+/* Status : Not started , In Progress , Completed */
+
+/* Prio : filled Star, empty star */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    /* justify-content: center; */
+    margin-top: 150px;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    padding-bottom: 1.5rem;
+}
+
+.createBTN {
+    padding: 0.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.input {
+    padding: 0.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.input::placeholder {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.taskHolder {
+    display: flex;
+    flex-direction: column;
+}
+
+.tsk {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin: 0.3rem;
+    padding: 0.3rem;
+}
+
+.img:hover {
+    cursor: pointer;
+}

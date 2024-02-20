@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::after {
+  box-sizing: border-box;
+}
+
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --bar-width: 5rem;
+  --bar-height: 0.75rem;
+  --hamburger-gap: 0.75rem;
+  --background: #fff;
+  --navcolor: #333;
+  --hamburger-margin: 1rem;
+  --animation-timing: 200ms ease-in-out;
+  --hamburger-height: calc(var(--bar-height)*3 + var(--hamburger-gap)*2);
+}
+
+.hamburger::before,
+.hamburger::after,
+.hamburger input {
+  content: "";
+  width: var(--bar-width);
+  height: var(--bar-height);
+  background-color: var(--navcolor);
+  border-radius: 900px;
+  transition: opacity var(--animation-timing), width var(--animation-timing), rotate var(--animation-timing), translate var(--animation-timing), background-color var(--animation-timing);
+  transform-origin: left center;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: var(--hamburger-gap);
+  width: -moz-max-content;
+  width: max-content;
+  position: absolute;
+  top: var(--hamburger-margin);
+  left: var(--hamburger-margin);
+  z-index: 3;
+  cursor: pointer;
+  --x-width: calc(var(--hamburger-height)*1.41421356237);
+}
+.hamburger input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  pointer-events: none;
+}
+.hamburger input:checked {
+  opacity: 0;
+  width: 0;
+}
+.hamburger:has(input:checked) + .sidebar {
+  translate: 0;
+}
+.hamburger:has(input:checked)::before {
+  rotate: 45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / -2);
+}
+.hamburger:has(input:checked) {
+  --navcolor: #fff;
+  --background: #333;
+}
+.hamburger:has(input:checked)::after {
+  rotate: -45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / 2);
+}
+
+.sidebar {
+  transition: translate var(--animation-timing);
+  translate: -100%;
+  padding: 0.5rem 1rem;
+  padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
+  background-color: var(--navcolor);
+  max-width: 10rem;
+  min-height: 100vh;
+}
+.sidebar a {
+  color: var(--background);
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  gap: 0.5rem;
+}/*# sourceMappingURL=main.css.map */

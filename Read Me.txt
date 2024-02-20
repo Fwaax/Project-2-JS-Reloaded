@@ -1,0 +1,4 @@
+Ryan Bazdug 205746027
+ריאן בזאדוג
+היה לי קשה לחשוב על פרוייקטים מהראש אני מקווה ש פרוייקטים 5 ו-6 מספק לציון 
+I used mostly used HTML and CSS  bit of Bootstrap and SASS

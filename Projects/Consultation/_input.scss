@@ -1,0 +1,249 @@
+/* Default styles for larger screens */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.topInputArea {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.img {
+  width: 30rem;
+  height: 45.9rem;
+}
+
+.input {
+  width: 15.7vw;
+  height: 2.5rem;
+  border-radius: 0px;
+  background-color: #E5EEFF;
+}
+
+.textContainer p {
+  max-width: 20rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.desc {
+  width: 33vw;
+}
+
+// .btn {
+//   margin-top: 2rem;
+// }
+#form {
+  display: flex;
+  gap: 5rem;
+}
+
+.form-control {
+  resize: none;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2rem;
+}
+
+#form {
+  display: flex;
+  align-items: center;
+}
+
+.shadow {
+  width: 15.7vw;
+  height: 0.15rem;
+  background-color: #FDBD03;
+}
+
+.text-center {
+  border-radius: 0;
+}
+
+.shadow1 {
+  width: 33vw;
+  background-color: #FDBD03;
+  height: 0.15rem;
+}
+
+#description {
+  border-radius: 0;
+  background-color: #E5EEFF;
+}
+
+.barContainer1 {
+  display: flex;
+  justify-content: end;
+}
+
+.barContainer2 {
+  display: flex;
+  align-items: end;
+}
+
+.yellowBar {
+  height: 1rem;
+  background-color: #FDBD03;
+}
+
+.topBar {
+  width: 20rem;
+}
+
+.row {
+  display: flex;
+}
+
+.bottomBar {
+  width: 50rem;
+}
+
+.iconDivTop {
+  height: 5rem;
+  width: 5rem;
+  background-color: #FDBD03;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.whatsappDiv {
+  height: 5rem;
+  width: 5rem;
+  background-color: #FDBD03;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconsArea {
+  display: flex;
+  flex-direction: row;
+  column-gap: 2rem;
+}
+
+.whatsimg {
+  height: 3rem;
+  width: 3rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+/* Media query for smaller screens, like tablets */
+@media (max-width: 768px) {
+  .topInputArea {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .iconDivTop {
+    display: none;
+  }
+
+  .input,
+  .desc {
+    width: 100%;
+  }
+
+  .shadow,
+  .shadow1 {
+    width: 100%;
+  }
+
+  /* Move the image to the top */
+  #imgPreview {
+    order: -1;
+    margin-bottom: 1rem;
+    /* Add some spacing between the image and the form */
+  }
+
+  .img {
+    width: 6rem;
+    height: 10rem;
+    max-width: 100%;
+  }
+
+  #imgPreview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .submitBox {
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .whatsappDiv {
+    height: 2rem;
+    width: 2rem;
+    background-color: #FDBD03;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .iconsArea {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .whatsimg {
+    height: 1rem;
+    width: 1rem;
+  }
+
+  .barContainer2 {
+    width: 100vw;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // text-align: center;
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  #description {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .img {
+    width: 10rem;
+    height: 16rem;
+  }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen Building</title>
+    <script src="../js/scripto.js" defer></script>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="econt">
+            <div class="editor" id="editorID">
+                <form id="form">
+                    <h1>Let's create a page</h1>
+
+                    <div class="inputDiv">
+                        <label for="elementType">Element Type:</label>
+                        <input type="text" name="elementType" id="elementType" class="elementType" required>
+                    </div>
+
+                    <div class="inputDiv">
+                        <label for="elementHeight">Height:</label>
+                        <input type="text" name="elementHeight" id="elementHeight" class="elementHeight" required>
+                    </div>
+
+                    <div class="inputDiv">
+                        <label for="elementWidth">Width:</label>
+                        <input type="text" name="elementWidth" id="elementWidth" class="elementWidth" required>
+                    </div>
+
+                    <div class="inputDiv">
+                        <label for="elementContents">Contents:</label>
+                        <input type="text" name="elementContents" id="elementContents" class="elementContents" required>
+                    </div>
+
+                    <div class="inputDiv">
+                        <label for="fontColor">Font Color:</label>
+                        <input type="text" name="fontColor" id="fontColor" class="fontColor" required>
+                    </div>
+
+                    <div class="inputDiv">
+                        <label for="fontSize">Font Size:</label>
+                        <input type="text" name="fontSize" id="fontSize" class="fontSize" required>
+                    </div>
+
+                    <div class="inputDiv">
+                        <label for="fontFamily">Font Family:</label>
+                        <input type="text" name="fontFamily" id="fontFamily" class="fontFamily" required>
+                    </div>
+
+                    <div class="btns">
+                        <button class="btn saveButton" id="saveBTN" type="button">Save</button>
+                        <button class="btn editButton" id="edit" type="button">Edit</button>
+                    </div>
+
+                </form>
+            </div>
+            <div class="expander" id="expander"><button class="btnExpander" id="btnExpander">
+                    < </button>
+            </div>
+        </div>
+        <div class="editee">
+            <div class="theThings" id="theThings"></div>
+        </div>
+    </div>
+</body>
+
+</html>
