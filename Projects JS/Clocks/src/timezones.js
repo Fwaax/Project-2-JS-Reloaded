@@ -33,7 +33,7 @@ export function TimezoneFormatter(tz) {
 }
 export function IsraelTime() {
     return __awaiter(this, void 0, void 0, function* () {
-        const time_data = yield GetTime("http://worldtimeapi.org/api/timezone/Asia/Jerusalem");
+        const time_data = yield GetTime("https://worldtimeapi.org/api/timezone/Asia/Jerusalem");
         const tz = 'Asia/Jerusalem';
         const formatter = TimezoneFormatter(tz);
         const adjusted_time = formatter.format(new Date(time_data));
@@ -42,7 +42,7 @@ export function IsraelTime() {
 }
 export function BerlinTime() {
     return __awaiter(this, void 0, void 0, function* () {
-        const time_data = yield GetTime("http://worldtimeapi.org/api/timezone/Europe/Berlin");
+        const time_data = yield GetTime("https://worldtimeapi.org/api/timezone/Europe/Berlin");
         const tz = 'Europe/Berlin';
         const formatter = TimezoneFormatter(tz);
         const adjusted_time = formatter.format(new Date(time_data));
